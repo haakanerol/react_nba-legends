@@ -13,7 +13,7 @@ export default function Main() {
   return (
     <div className={MainStyle.cards}>
       <form action="">
-        <input type="text" onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" onChange={(e) => setInputValue(e.target.value)} placeholder="Search a legend"/>
       </form>
       {inputvalue || inputvalue === " "
         ? filteredData.map((item, i) => <Card key={i} item={item} />)
